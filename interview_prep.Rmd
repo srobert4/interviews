@@ -1,6 +1,6 @@
 ---
 title: "Interview Review"
-output: github_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -8,14 +8,51 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Probability & Statistics
-Material from: Stats 116; Stats 200; Stats 191; MS&E 226
+Material from: Stats 116; Stats 200; Stats 191; MS&E 226; EE 278
+
 ## Basic Probability
+### Inequalities
+#### Markov
+#### Chebyshev
 
 ## Distributions of Random Variables
 
 ## Limit Theorems
 
+### Types of Convergence
+#### With Probability 1
+#### In Mean Square
+#### In Probability
+#### In Distribution
+
+### Important Limit Theorems
+#### Strong Law of Large Numbers
+For i.i.d. random variables $X_0$, $X_1$, ..., $X_n$, ... with finite mean $E(X)$ then the sequence of sample means $S_n \rightarrow E(X)\text{ w.p.1}$.
+
+#### Weak Law of Large Numbers
+For i.i.d. r.v.s $X_0$, $X_1$, ..., $X_n$, ... with finite mean $E(X)$ and variance $Var(X)$ then
+$$
+S_n = \frac{1}{n}\sum_{i = 1}^nX_i \rightarrow E(X)\text{ in probability.}
+$$
+Proof: _TODO_ show convergence in mean square
+
+Note: only technically requires uncorrelation not independence
+
+#### Central Limit Theorem
+For i.i.d. r.v.s $X_0$, $X_1$, ..., $X_n$, ... with finite mean $E(X)$ and variance $\sigma^2_X$ then
+$$
+Z_n = \frac{1}{\sqrt{n}}\sum_{i = 1}^n\frac{X_i - E(X)}{\sigma_X} \rightarrow Z \sim \mathcal{N}(0, 1)
+$$
+or alternatively
+
+$$
+\lim_{n \rightarrow \infty} F_{Z_n}(z) = \Phi(z)
+$$
+
 ## Inference
+
+### Confidence Intervals
+* use of CLT
 
 ## Signal Processing
 
