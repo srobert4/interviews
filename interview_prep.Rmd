@@ -1,0 +1,26 @@
+---
+title: "Interview Review"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Probability & Statistics
+Material from: Stats 116; Stats 200; Stats 191; MS&E 226
+## Basic Probability
+
+## Distributions of Random Variables
+
+## Limit Theorems
+
+## Inference
+
+## Signal Processing
+
+# Math
+Material from: CS 103; Math 51; Math 104
+
+# Programming
+Material from: CS 106A/B; CS 107; CS 110
